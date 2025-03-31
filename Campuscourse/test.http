@@ -1,0 +1,26 @@
+### Register a new user
+POST https://localhost:44366/api/Auth/register
+Content-Type: application/json
+
+{
+  "userName": "testuser",
+  "email": "testuser@example.com",
+  "password": "Password123!"
+}
+
+###
+
+### Log in as a user
+POST https://localhost:44366/api/Auth/login
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "Password123!"
+}
+
+###
+
+### Log out
+POST https://localhost:44366/api/Auth/logout
+Authorization: Bearer YOUR_JWT_TOKEN
